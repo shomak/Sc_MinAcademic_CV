@@ -1,0 +1,186 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% MINIMALIST ACADEMIC CV CLASS
+% CREATED BY SHOMAK CHAKRABARTI, PENN STATE UNIVERSITY
+% LAST EDITED ON JULY 20, 2020
+%Accessible at https://github.com/shomak/Sc_MinAcademic_CV.git
+
+\documentclass{cls/Curriculum_Vitae_Class}
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%==================================================
+% Create the Title Page
+%==================================================
+%Title of the Paper and acknowledgement
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-> Add the month-year format that appears at the bottom left corner of every page.
+\footerdate{Jul 2020}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-> Format: enter first name and last name within the first box.
+%-> Format: enter email id in first box; personal webpage in 2nd box - do not include the term http:// when writing your webpage. It is automatically added.
+\name{Firstname Lastname}
+\contact{email@domain.com}{webpage.com}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% %-> Add the month-year format that appears at the bottom left corner of every page.
+% \footerdate{Jul 2020}
+%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% %-> Format: enter first name and last name within the first box.
+% %-> Format: enter email id in first box; personal webpage in 2nd box - do not include the term http:// when writing your webpage. It is automatically added.
+% \name{Firstname Lastname}
+% \contact{email@domain.com}{webpage.com}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-> Format: command: \employment{}{}{}{}{}
+%-> Add multiple employments by adding \item to the \itemize command. Only use the \\~\\ option at the at the end of the LAST \item to increase space between the options.
+%-> If you want to leave one box empty, make sure you still type {} - just do not write anything within the brackets.
+\section{\texttt{EMPLOYMENT}}
+\begin{itemize}
+	\item \employment{Position}{University}{Country}{Start}{End}\\~\\
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-> Format: command: \education{}{}{}{}{}
+%-> Add multiple degrees by adding \item to the \itemize command. Only use the \\~\\ option at the at the end of the LAST \item to increase space between the options.
+%-> If you want to leave one box empty, make sure you still type {} - just do not write anything within the brackets.
+\section{\texttt{EDUCATION}}
+\begin{itemize}
+	\item \Education{Degree}{university}{Country}{Start}{End}\\~\\
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-> Format: table with column 1 as topic name, column 2 as response.
+%-> Topics - Main areas of expertise (ROW 1), Computer Skills (ROW 2), Language Skills (ROW 3)
+%-> modify the gaps between the items by changing [0.5em]. Only use the \\~\\ option at the at the end of the LAST \item to increase space between the options.
+%-> Uncomment the center commands if you want to amke the table in the middle
+\section{\texttt{INTERESTS \& SKILLS}}
+%\begin{center}
+\begin{tabular}{ l l }
+ \textit{Fields of Interest}: & Subject \\ [0.5em]
+ \textit{Computer Skills}: & \LaTeX \\ [0.5em]
+ \textit{Language Skills}: & English (\textit{proficient}).\\~\\
+\end{tabular}
+%\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-> Format: \paper{}{}{}{}
+%-> Foramt: \publication{}{} - first box is journal name, second box is link to the paper (dont add http://)
+%-> You can include the brackets when mentioning co-authors.
+%-> use \item with \itemize for subsection heading; \item with \enumerate to list the papers
+%-> Two options: you can put everything inside an itemized list - in that case comment the lines \textit{} and uncomment the \begin{itemize}, \item\textit{} and \end{itemize} lines
+\section{\texttt{RESEARCH PAPERS}}
+%\begin{itemize}
+	%\item \textit{Published Paper}
+\textit{Published Papers}:
+	\begin{enumerate}
+		\item \Paper{Papername}{Date}{(with co-author)}
+		\begin{itemize}
+			\item[] \Publication{journalname}{journalname.com}\\
+		\end{itemize}
+	\end{enumerate}
+	%\item \textit{Working papers}
+\textit{Working Papers}:
+	\begin{enumerate}
+		\item \Paper{Papername}{Date}{(with co-author)}
+		\begin{itemize}
+			\item[] \Publication{wpseries archive}{ssrn.com}\\~\\
+		\end{itemize}
+	\end{enumerate}
+%\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-> Format: \rawork{}{}{}{} and |tawork{}{}{}{}
+%-> For course instructor list, you leave the first box {} blank
+%-> you can remove the [] from\item[] if you want numbered/bulleted lists.
+\section{\texttt{TEACHING \& RESEARCH ACTIVITIES}}
+\begin{itemize}
+	\item \textit{Course Instructor}
+	\begin{itemize}
+		\item[] \TAwork{}{Course name}{Start}{End}
+	\end{itemize}
+	\item \textit{Teaching Assistant for}
+	\begin{itemize}
+		\item[] \TAwork{Instructor: }{Course name}{Start}{End}
+	\end{itemize}
+	\item \textit{Reseach Assistant for}
+	\begin{itemize}
+		\item[] \RAwork{Professor}{ University}{Start}{End}\\~\\
+	\end{itemize}
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-> Format: table with column 1 as Activity Name, column 2 as response.
+%-> Activity Name - activities performed
+%-> modify the gaps between the items by changing [0.5em]. Only use the \\~\\ option at the at the end of the LAST \item to increase space between the options.
+%-> Uncomment the center commands if you want to amke the table in the middle
+\section{\texttt{PROFESSIONAL ACTIVITIES}}
+%\begin{center}
+\begin{tabular}{ l l }
+ \textit{Referee}: & Journals \\ [0.5em]
+ \textit{Position}: & University \\~\\
+\end{tabular}
+%\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-> Format: table with column 1 as Universities where presentation was done, column 2 as Month-Year of presentation.
+%-> Activity Name - activities performed
+%-> Write only 3 letters for months e.g. Jan, Feb, Mar etc
+%-> modify the gaps between the items by changing [0.5em]. Only use the \\~\\ option at the at the end of the LAST \item to increase space between the options.
+%-> Uncomment the center commands if you want to amke the table in the middle
+\section{\texttt{PRESENTATIONS}}
+%\begin{center}
+\begin{tabular}{ l l }
+ \textit{Universities}: &  \hfill month-year \\ [0.5em]
+ \textit{Universities}: & \hfill month-year \\~\\
+\end{tabular}
+%\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-> Format: \Honours{}{}{}
+%-> Only use the \\~\\ option at the at the end of the LAST \item to increase space between the options.
+\section{\texttt{HONOURS}}
+\begin{itemize}
+	\item \Honours{Award name}{University}{Year}\\~\\
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-> Format: tabular with each column for a different professor
+%-> ROW 1: professor name; ROW 2: Department; ROW 3: University; ROW 4: email-id
+%-> Uncomment the center commands if you want to amke the table in the middle
+\section{\texttt{REFERENCES}}
+%\begin{center}
+\begin{tabular}{l l l}
+\textbf{\texttt{Professor 1}} & \textbf{\texttt{Professor 2}} & \textbf{\texttt{Professor 3}} \\
+Department  & Department & Department\\
+University & University& University\\
+\href{mailto:prof1@domain.edu}{\texttt{professor1@domain.edu}} & \href{mailto:prof2@domain.edu}{\texttt{professor2@domain.edu}} & \href{mailto:prof3@domain.edu}{\texttt{professor3@domain.edu}}\\~\\
+\end{tabular}
+%\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
