@@ -1,30 +1,31 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% MINIMALIST ACADEMIC CV CLASS 
+% MINIMALIST ACADEMIC CV CLASS
 % CREATED BY SHOMAK CHAKRABARTI, PENN STATE UNIVERSITY
 % LAST EDITED ON JULY 20, 2020
 %Accessible at https://github.com/shomak/Sc_MinAcademic_CV.git
 
-%The default path has been written for a MacOS system. For Windows user, just change the / to \ i.e. change the path to the class file to: sty\CV_Class
-\documentclass{sty/CV_Class}
+\documentclass{cls/Curriculum_Vitae_Class}
 \begin{document}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%-> Add the month-year format that appears at the bottom left corner of every page.  
-\footerdate{Jul 2020}
+\input{Curriculum_Vitae_Title/Curriculum_Vitae_Title}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%-> Format: enter first name and last name within the first box.
-%-> Format: enter email id in first box; personal webpage in 2nd box - do not include the term http:// when writing your webpage. It is automatically added.
-\name{Firstname Lastname}  
-\contact{email@domain.com}{webpage.com} 
+%
+% %-> Add the month-year format that appears at the bottom left corner of every page.
+% \footerdate{Jul 2020}
+%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% %-> Format: enter first name and last name within the first box.
+% %-> Format: enter email id in first box; personal webpage in 2nd box - do not include the term http:// when writing your webpage. It is automatically added.
+% \name{Firstname Lastname}
+% \contact{email@domain.com}{webpage.com}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%-> Format: command: \employment{}{}{}{}{} 
-%-> Add multiple employments by adding \item to the \itemize command. Only use the \\~\\ option at the at the end of the LAST \item to increase space between the options. 
-%-> If you want to leave one box empty, make sure you still type {} - just do not write anything within the brackets. 
+%-> Format: command: \employment{}{}{}{}{}
+%-> Add multiple employments by adding \item to the \itemize command. Only use the \\~\\ option at the at the end of the LAST \item to increase space between the options.
+%-> If you want to leave one box empty, make sure you still type {} - just do not write anything within the brackets.
 \section{\texttt{EMPLOYMENT}}
 \begin{itemize}
 	\item \employment{Position}{University}{Country}{Start}{End}\\~\\
@@ -32,9 +33,9 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%-> Format: command: \education{}{}{}{}{} 
-%-> Add multiple degrees by adding \item to the \itemize command. Only use the \\~\\ option at the at the end of the LAST \item to increase space between the options. 
-%-> If you want to leave one box empty, make sure you still type {} - just do not write anything within the brackets. 
+%-> Format: command: \education{}{}{}{}{}
+%-> Add multiple degrees by adding \item to the \itemize command. Only use the \\~\\ option at the at the end of the LAST \item to increase space between the options.
+%-> If you want to leave one box empty, make sure you still type {} - just do not write anything within the brackets.
 \section{\texttt{EDUCATION}}
 \begin{itemize}
 	\item \education{Degree}{university}{Country}{Start}{End}\\~\\
@@ -44,14 +45,14 @@
 
 %-> Format: table with column 1 as topic name, column 2 as response.
 %-> Topics - Main areas of expertise (ROW 1), Computer Skills (ROW 2), Language Skills (ROW 3)
-%-> modify the gaps between the items by changing [0.5em]. Only use the \\~\\ option at the at the end of the LAST \item to increase space between the options. 
+%-> modify the gaps between the items by changing [0.5em]. Only use the \\~\\ option at the at the end of the LAST \item to increase space between the options.
 %-> Uncomment the center commands if you want to amke the table in the middle
 \section{\texttt{INTERESTS \& SKILLS}}
 %\begin{center}
 \begin{tabular}{ l l }
  \textit{Fields of Interest}: & Subject \\ [0.5em]
  \textit{Computer Skills}: & \LaTeX \\ [0.5em]
- \textit{Language Skills}: & English (\textit{proficient}).\\~\\     
+ \textit{Language Skills}: & English (\textit{proficient}).\\~\\
 \end{tabular}
 %\end{center}
 
@@ -59,7 +60,7 @@
 
 %-> Format: \paper{}{}{}{}
 %-> Foramt: \publication{}{} - first box is journal name, second box is link to the paper (dont add http://)
-%-> You can include the brackets when mentioning co-authors. 
+%-> You can include the brackets when mentioning co-authors.
 %-> use \item with \itemize for subsection heading; \item with \enumerate to list the papers
 %-> Two options: you can put everything inside an itemized list - in that case comment the lines \textit{} and uncomment the \begin{itemize}, \item\textit{} and \end{itemize} lines
 \section{\texttt{RESEARCH PAPERS}}
@@ -70,7 +71,7 @@
 		\item \paper{Papername}{Date}{(with co-author)}
 		\begin{itemize}
 			\item[] \publication{journalname}{journalname.com}\\
-		\end{itemize} 
+		\end{itemize}
 	\end{enumerate}
 	%\item \textit{Working papers}
 \textit{Working Papers}:
@@ -78,14 +79,14 @@
 		\item \paper{Papername}{Date}{(with co-author)}
 		\begin{itemize}
 			\item[] \publication{wpseries archive}{ssrn.com}\\~\\
-		\end{itemize}  
+		\end{itemize}
 	\end{enumerate}
-%\end{itemize} 
+%\end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %-> Format: \rawork{}{}{}{} and |tawork{}{}{}{}
-%-> For course instructor list, you leave the first box {} blank 
+%-> For course instructor list, you leave the first box {} blank
 %-> you can remove the [] from\item[] if you want numbered/bulleted lists.
 \section{\texttt{TEACHING \& RESEARCH ACTIVITIES}}
 \begin{itemize}
@@ -107,7 +108,7 @@
 
 %-> Format: table with column 1 as Activity Name, column 2 as response.
 %-> Activity Name - activities performed
-%-> modify the gaps between the items by changing [0.5em]. Only use the \\~\\ option at the at the end of the LAST \item to increase space between the options. 
+%-> modify the gaps between the items by changing [0.5em]. Only use the \\~\\ option at the at the end of the LAST \item to increase space between the options.
 %-> Uncomment the center commands if you want to amke the table in the middle
 \section{\texttt{PROFESSIONAL ACTIVITIES}}
 %\begin{center}
@@ -122,7 +123,7 @@
 %-> Format: table with column 1 as Universities where presentation was done, column 2 as Month-Year of presentation.
 %-> Activity Name - activities performed
 %-> Write only 3 letters for months e.g. Jan, Feb, Mar etc
-%-> modify the gaps between the items by changing [0.5em]. Only use the \\~\\ option at the at the end of the LAST \item to increase space between the options. 
+%-> modify the gaps between the items by changing [0.5em]. Only use the \\~\\ option at the at the end of the LAST \item to increase space between the options.
 %-> Uncomment the center commands if you want to amke the table in the middle
 \section{\texttt{PRESENTATIONS}}
 %\begin{center}
@@ -135,7 +136,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %-> Format: \Honours{}{}{}
-%-> Only use the \\~\\ option at the at the end of the LAST \item to increase space between the options. 
+%-> Only use the \\~\\ option at the at the end of the LAST \item to increase space between the options.
 \section{\texttt{HONOURS}}
 \begin{itemize}
 	\item \honours{Award name}{University}{Year}\\~\\
@@ -143,7 +144,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%-> Format: tabular with each column for a different professor 
+%-> Format: tabular with each column for a different professor
 %-> ROW 1: professor name; ROW 2: Department; ROW 3: University; ROW 4: email-id
 %-> Uncomment the center commands if you want to amke the table in the middle
 \section{\texttt{REFERENCES}}
